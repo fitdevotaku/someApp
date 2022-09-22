@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import MyButton from "./components/MyButton";
 import ProfileCard from './components/ProfileCard';
+import profiles from './mockDatabase';
 
 function App() {
   const addButton = {
@@ -20,8 +21,9 @@ function App() {
       <button style={addButton} onClick={() => setCount(count - 1)}>-</button>
       <MyButton title='BUY🏆' color='green'/> 
       <MyButton title='Sell💰' color='red' />
-      <ProfileCard image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstreetartnews.net%2Fwp-content%2Fuploads%2F2019%2F09%2Fdeansunshine_landofsunshine_melbourne_streetart_graffiti_streetartnews_KAWS-Melbourne-NGV-19.jpg&f=1&nofb=1" name="KawZie NoZi" title="Founder & CEO" description="Description: I am a huge KAWS collector 🚀. I am also a developer 💻."/>
-      <ProfileCard image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstreetartnews.net%2Fwp-content%2Fuploads%2F2019%2F09%2Fdeansunshine_landofsunshine_melbourne_streetart_graffiti_streetartnews_KAWS-Melbourne-NGV-16.jpg&f=1&nofb=1" name="LaDy KawZie" title="Co-Founder & Chief Evangelist" description="I am a designer and part-time head honcho 🧑‍🚀." />
+      {profiles.map(profile => (
+        <ProfileCard image={profile.image} name={profile.name} title={profile.title} description={profile.description} />
+      ))}
 
       {/* // We set up our react js application from scratch and also, deleted */}
       {/* unwanted files // jsx practice and implementing variables and styles // */}
@@ -34,6 +36,7 @@ function App() {
       {/* Always make sure components are imported into main App.js component */}
       {/* build your componeny - added props in Button component */}
       {/* some destructuring in button component */}
+      {/* Fake database - array to loop through profile */}
     </>
   );
 }
