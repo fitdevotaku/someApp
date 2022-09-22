@@ -35,6 +35,8 @@ function App() {
       {/* key, value pairs! */}
       {/* onClick method */}
       {/* added component */}
+      {/* rafce auto complete component. Add ES7 snippets in Visual Studio Code */}
+      {/* Always make sure components are imported into main App.js component */}
       {/* added props in Button component */}
       {/* some destructuring in button component */}
     </>
