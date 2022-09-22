@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProfileCard = () => {
+const ProfileCard = ({title, tagline, description}) => {
     return (
       <div style={{backgroundColor: 'white', margin: '40px'}}>
         <div style={{display: 'flex'}}>
@@ -9,17 +9,15 @@ const ProfileCard = () => {
                     height="300px"
                 />
             <div>
-                <h2 style={{marginLeft:'10px', fontSize: '50px'}}>KawZie NoZi</h2>
-                <h6 style={{marginLeft: '10px', fontSize: '25px'}}>Founder & CEO</h6>
+                <h2 style={{ marginLeft: '10px', fontSize: '50px' }}>{title}</h2>
+                <h6 style={{ marginLeft: '10px', fontSize: '25px' }}>{tagline}</h6>
             </div>
         </div>
             
         <div>
-            <p style={{fontSize: '23px', padding: '5px'}}>Description: I am a huge KAWS collector 🚀. I am also a developer 💻. </p>    
+            <p style={{ fontSize: '23px', padding: '5px' }}>{description}</p>    
         </div>
       </div>
-     
-      
   )
 }
 
