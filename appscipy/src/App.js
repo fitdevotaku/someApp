@@ -25,7 +25,8 @@ function App() {
       <h1>My count is {count}</h1>
       <button onClick={() => setCount(count + 1)}>+</button>
       <button onClick={() => setCount(count - 1)}>-</button>
-      <MyButton/>
+      <MyButton title='BUY🏆' color='green'/>
+      <MyButton title='Sell💰' color='red'/>
       <p style={mystyle}>{message}</p>
       {/* // We set up our react js application from scratch and also, deleted */}
       {/* unwanted files // jsx practice and implementing variables and styles // */}
