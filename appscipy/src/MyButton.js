@@ -1,6 +1,11 @@
-const MyButton = () => {
+const MyButton = ({title, color}) => {
+  const buttonStyle = {
+    font: color,
+    backgroundColor: color,
+    fontSize: '20px',
+  }
   return (
-    <button>BUY NOW!</button>
+    <button style={buttonStyle}>{title}</button>
   )
 }
 
