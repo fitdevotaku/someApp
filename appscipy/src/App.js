@@ -36,6 +36,7 @@ function App() {
       {/* onClick method */}
       {/* added component */}
       {/* added props in Button component */}
+      {/* some destructuring in button component */}
     </>
   );
 }
