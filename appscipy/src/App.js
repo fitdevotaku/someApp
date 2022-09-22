@@ -37,7 +37,7 @@ function App() {
       {/* added component */}
       {/* rafce auto complete component. Add ES7 snippets in Visual Studio Code */}
       {/* Always make sure components are imported into main App.js component */}
-      {/* added props in Button component */}
+      {/* build your componeny - added props in Button component */}
       {/* some destructuring in button component */}
     </>
   );
