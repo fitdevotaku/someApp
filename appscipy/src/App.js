@@ -26,7 +26,7 @@ function App() {
       {/* unwanted files // jsx practice and implementing variables and styles // */}
       {/* whatever goes in curly braces {} is Javascript // styles is a attribute */}
       {/* and could be used in javascript // we created object to style. We used a */}
-      {/* key, value pairs!!! */}
+      {/* key, value pairs! */}
     </div>
   );
 }
