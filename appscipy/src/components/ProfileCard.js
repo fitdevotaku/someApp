@@ -1,7 +1,7 @@
 import React from 'react'
 import profiles from '../mockDatabase'
 
-console.log(profiles)
+// console.log(profiles)
 
 const ProfileCard = ({image, name, title, description}) => {
     return (
