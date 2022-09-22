@@ -20,6 +20,7 @@ function App() {
     <div>
       <h1>My count is {count}</h1>
       <button onClick={() => setCount(count + 1)}>Add Count</button>
+      <button onClick={() => setCount(count - 1)}>Minus Count</button>
       <p style={mystyle}>{message}</p>
       {/* // We set up our react js application from scratch and also, deleted */}
       {/* unwanted files // jsx practice and implementing variables and styles // */}
