@@ -33,6 +33,7 @@ function App() {
       {/* and could be used in javascript // we created object to style. We used a */}
       {/* key, value pairs! */}
       {/* onClick method */}
+      {/* added component */}
     </>
   );
 }
