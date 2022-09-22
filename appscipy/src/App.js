@@ -1,6 +1,7 @@
+import React from 'react';
 import "./App.css";
 import { useState } from "react";
-import React from 'react';
+import MyButton from "./MyButton";
 
 function App() {
   const mystyle = {
@@ -24,6 +25,7 @@ function App() {
       <h1>My count is {count}</h1>
       <button onClick={() => setCount(count + 1)}>Add Count</button>
       <button onClick={() => setCount(count - 1)}>Minus Count</button>
+      <MyButton/>
       <p style={mystyle}>{message}</p>
       {/* // We set up our react js application from scratch and also, deleted */}
       {/* unwanted files // jsx practice and implementing variables and styles // */}
