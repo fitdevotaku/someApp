@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <h1>My count is {count}</h1>
+      <h1>KAWS SQUADRON {count}</h1>
       <button style={addButton} onClick={() => setCount(count + 1)}>+</button>
       <button style={addButton} onClick={() => setCount(count - 1)}>-</button>
       <MyButton title='BUY🏆' color='green'/> 
