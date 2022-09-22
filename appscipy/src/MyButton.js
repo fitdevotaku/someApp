@@ -1,4 +1,5 @@
-const MyButton = ({title, color}) => {
+const MyButton = ({ title, color }) => {
+  // destructuring coming through as an object
   const buttonStyle = {
     font: color,
     backgroundColor: color,
