@@ -8,7 +8,7 @@ function App() {
   const addButton = {
     fontSize: "40px"
   }
-  
+
   const [count, setCount] = useState(0);
   // increment and decrement a state variable
   // what we put in the state variable is default. Here we are starting at 0
@@ -20,7 +20,8 @@ function App() {
       <button style={addButton} onClick={() => setCount(count - 1)}>-</button>
       <MyButton title='BUY🏆' color='green'/> 
       <MyButton title='Sell💰' color='red' />
-      <ProfileCard />
+      <ProfileCard title="KawZie NoZi" tagline="Founder & CEO" description="Description: I am a huge KAWS collector 🚀. I am also a developer 💻."/>
+      <ProfileCard title="John Doe" tagline="Co-Founder & Chief Evangelist" description="I am a designer and part-time head honcho 🧑‍🚀." />
 
       {/* // We set up our react js application from scratch and also, deleted */}
       {/* unwanted files // jsx practice and implementing variables and styles // */}
