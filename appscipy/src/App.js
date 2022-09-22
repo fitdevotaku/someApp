@@ -23,8 +23,8 @@ function App() {
   return (
     <>
       <h1>My count is {count}</h1>
-      <button onClick={() => setCount(count + 1)}>Add Count</button>
-      <button onClick={() => setCount(count - 1)}>Minus Count</button>
+      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={() => setCount(count - 1)}>-</button>
       <MyButton/>
       <p style={mystyle}>{message}</p>
       {/* // We set up our react js application from scratch and also, deleted */}
