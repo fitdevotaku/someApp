@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css";
 import { useState } from "react";
 import MyButton from "./components/MyButton";
+import ProfileCard from './components/ProfileCard';
 
 function App() {
   const mystyle = {
@@ -9,6 +10,10 @@ function App() {
     fontSize: "20px",
     fontFamily: "arial",
   };
+
+  const addButton = {
+    fontSize: "40px"
+  }
 
   const nameBucket = "Scipio";
   const myAge = 28;
@@ -23,10 +28,11 @@ function App() {
   return (
     <>
       <h1>My count is {count}</h1>
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button onClick={() => setCount(count - 1)}>-</button>
+      <button style={addButton} onClick={() => setCount(count + 1)}>+</button>
+      <button style={addButton} onClick={() => setCount(count - 1)}>-</button>
       <MyButton title='BUY🏆' color='green'/> 
-      <MyButton title='Sell💰' color='red'/>
+      <MyButton title='Sell💰' color='red' />
+      <ProfileCard />
       <p style={mystyle}>{message}</p>
       {/* // We set up our react js application from scratch and also, deleted */}
       {/* unwanted files // jsx practice and implementing variables and styles // */}
