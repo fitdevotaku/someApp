@@ -43,19 +43,20 @@ function App() {
           description={profile.description} />
       ))}
 
-      {/* // We set up our react js application from scratch and also, deleted */}
-      {/* unwanted files // jsx practice and implementing variables and styles // */}
-      {/* whatever goes in curly braces {} is Javascript // styles is a attribute */}
-      {/* and could be used in javascript // we created object to style. We used a */}
-      {/* key, value pairs! */}
-      {/* onClick method */}
-      {/* added component */}
-      {/* rafce auto complete component. Add ES7 snippets in Visual Studio Code */}
-      {/* Always make sure components are imported into main App.js component */}
-      {/* build your componeny - added props in Button component */}
-      {/* some destructuring in button component */}
-      {/* Fake database - array to loop through profile */}
-      {/* get a random user online and access their data */}
+      {/* Set up our react js application from scratch and also, deleted unwanted files
+      jsx practice and implementing variables and styles
+      Whatever goes in curly braces { } is Javascript
+      Styles is a attribute and could be used in javascript
+      Created object to style. We used a key, value pairs!
+      onClick method
+      Added component
+      rafce auto complete component. Add ES7 snippets in Visual Studio Code
+      Always make sure components are imported into main App.js component
+      Build your components - added props in Button component
+      Some destructuring in button component
+      Fake database - array to loop through profile
+      Get a random user online and access their data */}
+
     </>
   );
 }
