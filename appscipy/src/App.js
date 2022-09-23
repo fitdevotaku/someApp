@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MyButton from "./components/MyButton";
 import ProfileCard from './components/ProfileCard';
 import profiles from './mockDatabase';
@@ -14,20 +14,24 @@ function App() {
   // increment and decrement a state variable
   // what we put in the state variable is default. Here we are starting at 0
 
+  const [fullgov, setFullGov] = useState('Awaiting fetched data...')
+
   // State API -- 
-  // online code - async await when fetching data
+  // online code - async await with api request then storing into a state variable called "fullgov" that means 'full government name'. 
   const randomName = async () => {
     const response = await fetch('https://randomuser.me/api')
     // went to random user api and fetch data
     const data = await response.json()
     // turned into json format {}
-    console.log(data.results[0].name.first + ' ' + data.results[0].name.last)
+   setFullGov(data.results[0].name.first + ' ' + data.results[0].name.last)
     // we get our result and shows first and last name
     return data.results[0].picture.large
   }
 
-  randomName()
-
+  useEffect(() => {
+      randomName()
+  }, [])
+    // dependency of empty array. Basiclally allows function to run once infinite amount of times.
   return (
     <>
       <h1>UGLY SQUADRON: {count}</h1>
@@ -38,7 +42,7 @@ function App() {
       {profiles.map(profile => (
         <ProfileCard
           image={`https://robohash.org/${Math.random()}.png`}
-          name={profile.name}
+          name={fullgov}
           title={profile.title}
           description={profile.description} />
       ))}
